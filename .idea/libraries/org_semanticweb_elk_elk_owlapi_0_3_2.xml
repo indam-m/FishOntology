@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="org.semanticweb.elk:elk-owlapi:0.3.2" type="repository">
+    <properties maven-id="org.semanticweb.elk:elk-owlapi:0.3.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/elk-owlapi-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/owlapi-apibinding-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/owlapi-api-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/owlapi-impl-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/owlapi-parsers-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/owlapi-tools-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-owl-model-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-owl-implementation-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-hashing-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-reasoner-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-collections-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-concurrent-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-logging-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-common-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/elk-util-io-0.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
