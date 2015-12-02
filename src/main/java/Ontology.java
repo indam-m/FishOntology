@@ -9,7 +9,7 @@ import java.io.File;
  * Created by Anggi on 30/11/2015.
  */
 public class Ontology {
-    String PATH = "C:\\Users\\Anggi\\Documents\\kuliah\\Semester 7\\RPP\\Protege\\fishclassification\\tmp\\fish.owl";
+    String PATH = "../tmp/fish.owl";
 
     public void load() throws OWLOntologyCreationException {
         // Get hold of an ontology manager

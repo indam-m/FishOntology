@@ -79,7 +79,7 @@ public class DLQueriesWithHermiT {
         String result = "";
         result += "How is the "+parseOWL(getSuperClass(pilihan[0].asOWLClass(),ontology).toString())+" of the fish?"+"\n";
         for (i = 0; i < 2; i++) {
-            result += i+"."+parseOWL(pilihan[i].toString()).replace("_","")+"\n";
+            result += (i+1)+". "+parseOWL(pilihan[i].toString()).replace("_","")+"\n";
         }
 
         // menampilkan pertanyaan
@@ -89,6 +89,7 @@ public class DLQueriesWithHermiT {
         Scanner reader = new Scanner(System.in);
         System.out.print("Answer: ");
         int pil = reader.nextInt();
+        pil -= 1;
 
         // jika salah memasukkan jawaban
         while(pil != 0 && pil != 1){
@@ -136,7 +137,7 @@ public class DLQueriesWithHermiT {
 
         // Load an example ontology.
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        File file = new File("C:\\Users\\Anggi\\Documents\\kuliah\\Semester 7\\RPP\\Protege\\fishclassification\\tmp\\fish.owl");
+        File file = new File("tmp/fish.owl");
 
         OWLOntology ontology = manager
                 .loadOntologyFromOntologyDocument(file);

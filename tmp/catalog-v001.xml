@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1449028786482" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1449028786482" name="duplicate:http://www.semanticweb.org/anggi/ontologies/2015/10/fish.owl" uri="fish%20-%20backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1449028786482" name="duplicate:http://www.semanticweb.org/anggi/ontologies/2015/10/fish.owl" uri="fish.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1449039541779" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1449039541779" name="duplicate:http://www.semanticweb.org/anggi/ontologies/2015/10/fish.owl" uri="fish%20-%20backup.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1449039541779" name="duplicate:http://www.semanticweb.org/anggi/ontologies/2015/10/fish.owl" uri="fish.owl"/>
     </group>
 </catalog>
