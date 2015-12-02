@@ -42,13 +42,13 @@ public class DLQueriesWithHermiT {
 
     // get next value of a class of FIsh Name to be a question
     public static OWLClass getValueObjectProperty (OWLClass cl,OWLOntology ontology){
-        System.out.println("=GetValueObjectProperty=");
+//        System.out.println("=GetValueObjectProperty=");
         OWLClass value = null;
         boolean found = false;
         for(OWLClassExpression ce1: cl.getSuperClasses(ontology)) {
             if (!ce1.isClassExpressionLiteral()) { // get only objectAllValuesFrom or something like "has_blabla only blabla"
-                System.out.println(ce1.toString());
-                System.out.println(ce1.getClassesInSignature()); // get array of OWLClass [value],
+//                System.out.println(ce1.toString());
+//                System.out.println(ce1.getClassesInSignature()); // get array of OWLClass [value],
                 for(OWLClass val: ce1.getClassesInSignature()){
                     if(!alreadyAsked.contains(getSuperClass(val,ontology))){ // jika property belum ditanyakan
                         alreadyAsked.add(getSuperClass(val,ontology));
@@ -74,27 +74,32 @@ public class DLQueriesWithHermiT {
             pilihan[i] = subclass.asOWLClass();
             i++;
         }
-//        for(OWLClassExpression ce: op.getRanges(ontology)) {
-//            for(OWLClass cl: ce.getClassesInSignature()){
-//                int i = 0;
-//                for(OWLClassExpression ce2: cl.getSubClasses(ontology)) {
-//                    pilihan[i] = ce2;
-//                    i++;
-//                }
-//            }
-//        }
 
+        // menyusun pertanyaan
         String result = "";
         result += "How is the characteristic of "+parseOWL(getSuperClass(pilihan[0].asOWLClass(),ontology).toString())+"?"+"\n";
         for (i = 0; i < 2; i++) {
-            result += i+"."+parseOWL(pilihan[i].toString())+"\n";
+            result += i+"."+parseOWL(pilihan[i].toString()).replace("_","")+"\n";
         }
 
+        // menampilkan pertanyaan
         System.out.println(result);
 
+        // meminta jawaban
         Scanner reader = new Scanner(System.in);
         System.out.print("Answer: ");
         int pil = reader.nextInt();
+
+        // jika salah memasukkan jawaban
+        while(pil != 0 && pil != 1){
+            System.out.println("There is no answer "+pil);
+            System.out.println(result);// menampilkan pertanyaan
+            // meminta jawaban
+            System.out.print("Answer: ");
+            pil = reader.nextInt();
+        }
+
+        // menyusun query dari jawaban
         String query = " and has_characteristic only " + parseOWL(pilihan[pil].toString());
 
         return query;
@@ -102,62 +107,27 @@ public class DLQueriesWithHermiT {
 
     // get next value to be a question from result of query
     public static OWLClass getNextValue(Set<OWLClass> subclasses, OWLOntology ontology){
-        System.out.println("=Get Next Object=");
+//        System.out.println("=Get Next Object=");
         boolean found = false;
         OWLClass result = null;
         for(OWLClass subclass: subclasses){
-            // dapetin subclass nya: Actinopterygii atau Sarcopterygii
-            // dapetin subclass of yang has_fin
             if(subclasses.size() == 1) {
                 for (OWLClassExpression c : subclass.getSubClasses(ontology)) { // get subclass
-                    System.out.println(c.toString());
+//                    System.out.println(c.toString());
                     result = getValueObjectProperty(c.asOWLClass(),ontology);
                     found = true;
                     break;
-//                    for (OWLClassExpression ce1 : c.asOWLClass().getSuperClasses(ontology)) {
-//                        if (!ce1.isClassExpressionLiteral()) { // get objectAllValuesFrom
-//                            for (OWLObjectProperty op : ce1.getObjectPropertiesInSignature()) {
-//                                System.out.println(op.toString());
-//                                if (!alreadyAsked.contains(op)) {
-//                                    result = op;
-//                                    found = true;
-//                                    break;
-//                                }
-//                            }
-//                        }
-//                        if (found) {
-//                            break;
-//                        }
-//                    }
-//                    if (found) {
-//                        break;
-//                    }
                 }
             } else { //jumlah class lebih dari 1
-                System.out.println(subclass.toString());
+//                System.out.println(subclass.toString());
                 result = getValueObjectProperty(subclass,ontology);
                 found = true;
-//                for (OWLClassExpression ce1 : subclass.getSuperClasses(ontology)) {
-//                    if (!ce1.isClassExpressionLiteral()) {
-//                        for (OWLObjectProperty op : ce1.getObjectPropertiesInSignature()) {
-//                            System.out.println(op.toString());
-//                            if (!alreadyAsked.contains(op)) {
-//                                result = op;
-//                                found = true;
-//                                break;
-//                            }
-//                        }
-//                    }
-//                    if (found) {
-//                        break;
-//                    }
-//                }
             }
             if(found) {
                 break;
             }
         }
-        System.out.println(result);
+//        System.out.println(result);
         return result;
     }
 
@@ -192,20 +162,21 @@ public class DLQueriesWithHermiT {
                 break;
             }
         }
-        System.out.println(name);
+//        System.out.println(name);
 
         // ask question
         String query = "";
         Set<OWLClass> result = new HashSet<>();
+        boolean found = false;
 
         result.add(name);
         OWLClass value = getNextValue(result,ontology);
-        System.out.println(value);
+//        System.out.println(value);
 
         query += askQuestion(getSuperClass(value,ontology),ontology); // ambil pertanyaan pertama dari value yang didapat dari kelas Name
         query = query.replaceFirst(" and ","");
         while(true) {
-            System.out.println(query);
+//            System.out.println(query);
 //            String classExpression = br.readLine();
             // Check for exit condition
 //            if (classExpression == null || classExpression.equalsIgnoreCase("x")) {
@@ -213,6 +184,28 @@ public class DLQueriesWithHermiT {
 //            }
             result = dlQueryPrinter.askQuery(query.trim()); // ambil hasil kelas dari query
 
+            // jika sudah mencapai jawaban
+            if(result.size() == 1){
+                for(OWLClass res: result){
+                    if(res.getSubClasses(ontology).size() == 0){ // tidak punya subclass lagi
+                        System.out.println("RESULT: "+parseOWL(res.toString()).replace("owl:",""));
+                        found = true;
+                    } else if(res.getSubClasses(ontology).size() == 1){ // punya subclass hanya 1
+                        for(OWLClassExpression ce: res.getSubClasses(ontology)){
+                            System.out.println("RESULT: "+parseOWL(ce.toString()).replace("owl:",""));
+                        }
+                        found = true;
+                    }
+                    if(found){
+                        break;
+                    }
+                }
+            }
+            if(found){
+                break;
+            }
+
+            // proses menanyakan pertanyaan selanjutnya
             value = getNextValue(result,ontology); // dapat value selanjutnya untuk ditanyakan
             System.out.println();
 

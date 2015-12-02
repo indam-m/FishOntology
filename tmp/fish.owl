@@ -40,9 +40,6 @@
         <Class IRI="#Batoidea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BehindFrontOfEyesMouth"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Body"/>
     </Declaration>
     <Declaration>
@@ -82,9 +79,6 @@
         <Class IRI="#DorsalFin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DorsalFinSpines"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Elasmobranchii"/>
     </Declaration>
     <Declaration>
@@ -94,16 +88,10 @@
         <Class IRI="#ElongatedBody"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ElongatedSnout"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ExistAnalFin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExistElectricOrgan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExistJawLikeShark"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Eyelids"/>
@@ -118,16 +106,7 @@
         <Class IRI="#Fish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FiveGillSlits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#FiveToSevenGillPairs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FlatBodyRayLike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flattened"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FlattenedShape"/>
@@ -172,16 +151,10 @@
         <Class IRI="#Holostei"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InFrontOfEyesMouth"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#JawLikeShark"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lamniformes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LargePectoralFin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lepidosireniformes"/>
@@ -208,31 +181,13 @@
         <Class IRI="#Neopterygii"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NictitatingEyelids"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#NoAnalFin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NoElectricOrgan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NoFinSpines"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NoNictitatingEyelids"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NotFlattened"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#NotFossilLobeFin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NotJawLikeShark"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NotRayLikeBody"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NotSurviveWithoutWater"/>
@@ -242,9 +197,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#NotVentralGillSlits"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OneDorsalFin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Orectolobiformes"/>
@@ -286,16 +238,7 @@
         <Class IRI="#SeriesOfDorsalFin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ShortSnout"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SixOrSevenGillSlits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Skeleton"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SmallPectoralFin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Snout"/>
@@ -319,9 +262,6 @@
         <Class IRI="#Torpediniformes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TwoDorsalFins"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UniqueSeriesDorsalFin"/>
     </Declaration>
     <Declaration>
@@ -332,6 +272,66 @@
     </Declaration>
     <Declaration>
         <Class IRI="#WithoutWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_ExistJawLikeShark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_FiveGillSlits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_FlatBodyRayLike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_LargePectoralFin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_NotJawLikeShark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_NotRayLikeBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_OneDorsalFin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_SixOrSevenGillSlits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_SmallPectoralFin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_TwoDorsalFins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__DorsalFinSpines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__ElongatedSnout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__Flattened"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__NoFinSpines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__NotFlattened"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#__ShortSnout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#___BehindFrontOfEyesMouth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#___InFrontOfEyesMouth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#____NictitatingEyelids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#____NoNictitatingEyelids"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_characteristic"/>
@@ -382,10 +382,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BehindFrontOfEyesMouth"/>
-        <Class IRI="#Mouth"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Body"/>
         <Class IRI="#Properties"/>
     </SubClassOf>
@@ -405,13 +401,6 @@
         <Class IRI="#Carcharhiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#BehindFrontOfEyesMouth"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carcharhiniformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
             <Class IRI="#ExistAnalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -419,28 +408,35 @@
         <Class IRI="#Carcharhiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#FiveGillSlits"/>
+            <Class IRI="#_FiveGillSlits"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carcharhiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NictitatingEyelids"/>
+            <Class IRI="#_TwoDorsalFins"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carcharhiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NoFinSpines"/>
+            <Class IRI="#__NoFinSpines"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carcharhiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#TwoDorsalFins"/>
+            <Class IRI="#___BehindFrontOfEyesMouth"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carcharhiniformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#____NictitatingEyelids"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -470,14 +466,14 @@
         <Class IRI="#Chondrostei"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#ExistJawLikeShark"/>
+            <Class IRI="#NotUniqueSeriesDorsalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Chondrostei"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotUniqueSeriesDorsalFin"/>
+            <Class IRI="#_ExistJawLikeShark"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -508,10 +504,6 @@
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DorsalFinSpines"/>
-        <Class IRI="#FinSpines"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Elasmobranchii"/>
         <Class IRI="#Chondrichthyes"/>
     </SubClassOf>
@@ -531,20 +523,12 @@
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ElongatedSnout"/>
-        <Class IRI="#Snout"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ExistAnalFin"/>
         <Class IRI="#AnalFin"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ExistElectricOrgan"/>
         <Class IRI="#ElectricOrgan"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ExistJawLikeShark"/>
-        <Class IRI="#JawLikeShark"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Eyelids"/>
@@ -559,20 +543,8 @@
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FiveGillSlits"/>
-        <Class IRI="#GillSlits"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#FiveToSevenGillPairs"/>
         <Class IRI="#GillPair"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FlatBodyRayLike"/>
-        <Class IRI="#Body"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flattened"/>
-        <Class IRI="#FlattenedShape"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FlattenedShape"/>
@@ -622,13 +594,6 @@
         <Class IRI="#Heterodontiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#DorsalFinSpines"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Heterodontiformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
             <Class IRI="#ExistAnalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -636,7 +601,14 @@
         <Class IRI="#Heterodontiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#TwoDorsalFins"/>
+            <Class IRI="#_TwoDorsalFins"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heterodontiformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#__DorsalFinSpines"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -654,7 +626,7 @@
         <Class IRI="#Hexanchiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#OneDorsalFin"/>
+            <Class IRI="#_OneDorsalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -680,23 +652,12 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#InFrontOfEyesMouth"/>
-        <Class IRI="#Mouth"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#JawLikeShark"/>
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lamniformes"/>
         <Class IRI="#Selachii"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lamniformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#BehindFrontOfEyesMouth"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lamniformes"/>
@@ -709,33 +670,36 @@
         <Class IRI="#Lamniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#FiveGillSlits"/>
+            <Class IRI="#_FiveGillSlits"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lamniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NoFinSpines"/>
+            <Class IRI="#_TwoDorsalFins"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lamniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NoNictitatingEyelids"/>
+            <Class IRI="#__NoFinSpines"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lamniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#TwoDorsalFins"/>
+            <Class IRI="#___BehindFrontOfEyesMouth"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LargePectoralFin"/>
-        <Class IRI="#PectoralFin"/>
+        <Class IRI="#Lamniformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#____NoNictitatingEyelids"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lepidosireniformes"/>
@@ -772,21 +736,21 @@
         <Class IRI="#Myliobatiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#Flattened"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Myliobatiformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#LargePectoralFin"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Myliobatiformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
             <Class IRI="#NoElectricOrgan"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myliobatiformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#_LargePectoralFin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myliobatiformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#__Flattened"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -801,19 +765,15 @@
         <Class IRI="#Neopterygii"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotJawLikeShark"/>
+            <Class IRI="#NotUniqueSeriesDorsalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neopterygii"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotUniqueSeriesDorsalFin"/>
+            <Class IRI="#_NotJawLikeShark"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NictitatingEyelids"/>
-        <Class IRI="#Eyelids"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NoAnalFin"/>
@@ -824,28 +784,8 @@
         <Class IRI="#ElectricOrgan"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NoFinSpines"/>
-        <Class IRI="#FinSpines"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NoNictitatingEyelids"/>
-        <Class IRI="#Eyelids"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NotFlattened"/>
-        <Class IRI="#FlattenedShape"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#NotFossilLobeFin"/>
         <Class IRI="#LobeFinType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NotJawLikeShark"/>
-        <Class IRI="#JawLikeShark"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NotRayLikeBody"/>
-        <Class IRI="#Body"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NotSurviveWithoutWater"/>
@@ -858,10 +798,6 @@
     <SubClassOf>
         <Class IRI="#NotVentralGillSlits"/>
         <Class IRI="#GillSlitsPos"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OneDorsalFin"/>
-        <Class IRI="#DorsalFin"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Orectolobiformes"/>
@@ -878,28 +814,28 @@
         <Class IRI="#Orectolobiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#FiveGillSlits"/>
+            <Class IRI="#_FiveGillSlits"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Orectolobiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#InFrontOfEyesMouth"/>
+            <Class IRI="#_TwoDorsalFins"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Orectolobiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NoFinSpines"/>
+            <Class IRI="#__NoFinSpines"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Orectolobiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#TwoDorsalFins"/>
+            <Class IRI="#___InFrontOfEyesMouth"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -936,19 +872,12 @@
         <Class IRI="#Pristiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#SmallPectoralFin"/>
+            <Class IRI="#_SmallPectoralFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pristiophoriformes"/>
         <Class IRI="#Selachii"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pristiophoriformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#ElongatedSnout"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pristiophoriformes"/>
@@ -961,7 +890,14 @@
         <Class IRI="#Pristiophoriformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotRayLikeBody"/>
+            <Class IRI="#_NotRayLikeBody"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pristiophoriformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#__ElongatedSnout"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -976,13 +912,6 @@
         <Class IRI="#Rajiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#LargePectoralFin"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rajiformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_characteristic"/>
             <Class IRI="#NoElectricOrgan"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -990,7 +919,14 @@
         <Class IRI="#Rajiformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotFlattened"/>
+            <Class IRI="#_LargePectoralFin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rajiformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#__NotFlattened"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1028,22 +964,10 @@
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ShortSnout"/>
-        <Class IRI="#Snout"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SixOrSevenGillSlits"/>
-        <Class IRI="#GillSlits"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Skeleton"/>
         <Class IRI="#Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmallPectoralFin"/>
-        <Class IRI="#PectoralFin"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Snout"/>
         <Class IRI="#Properties"/>
     </SubClassOf>
@@ -1062,14 +986,14 @@
         <Class IRI="#Squaliformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NotRayLikeBody"/>
+            <Class IRI="#_NotRayLikeBody"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Squaliformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#ShortSnout"/>
+            <Class IRI="#__ShortSnout"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1080,14 +1004,14 @@
         <Class IRI="#Squatiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#FlatBodyRayLike"/>
+            <Class IRI="#NoAnalFin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Squatiniformes"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#has_characteristic"/>
-            <Class IRI="#NoAnalFin"/>
+            <Class IRI="#_FlatBodyRayLike"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1121,10 +1045,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TwoDorsalFins"/>
-        <Class IRI="#DorsalFin"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#UniqueSeriesDorsalFin"/>
         <Class IRI="#SeriesOfDorsalFin"/>
     </SubClassOf>
@@ -1139,6 +1059,86 @@
     <SubClassOf>
         <Class IRI="#WithoutWater"/>
         <Class IRI="#Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_ExistJawLikeShark"/>
+        <Class IRI="#JawLikeShark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_FiveGillSlits"/>
+        <Class IRI="#GillSlits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_FlatBodyRayLike"/>
+        <Class IRI="#Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_LargePectoralFin"/>
+        <Class IRI="#PectoralFin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_NotJawLikeShark"/>
+        <Class IRI="#JawLikeShark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_NotRayLikeBody"/>
+        <Class IRI="#Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_OneDorsalFin"/>
+        <Class IRI="#DorsalFin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SixOrSevenGillSlits"/>
+        <Class IRI="#GillSlits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SmallPectoralFin"/>
+        <Class IRI="#PectoralFin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_TwoDorsalFins"/>
+        <Class IRI="#DorsalFin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__DorsalFinSpines"/>
+        <Class IRI="#FinSpines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__ElongatedSnout"/>
+        <Class IRI="#Snout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__Flattened"/>
+        <Class IRI="#FlattenedShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__NoFinSpines"/>
+        <Class IRI="#FinSpines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__NotFlattened"/>
+        <Class IRI="#FlattenedShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#__ShortSnout"/>
+        <Class IRI="#Snout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#___BehindFrontOfEyesMouth"/>
+        <Class IRI="#Mouth"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#___InFrontOfEyesMouth"/>
+        <Class IRI="#Mouth"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#____NictitatingEyelids"/>
+        <Class IRI="#Eyelids"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#____NoNictitatingEyelids"/>
+        <Class IRI="#Eyelids"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Actinistia"/>
@@ -1155,10 +1155,6 @@
     <DisjointClasses>
         <Class IRI="#Batoidea"/>
         <Class IRI="#Selachii"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#BehindFrontOfEyesMouth"/>
-        <Class IRI="#InFrontOfEyesMouth"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Carcharhiniformes"/>
@@ -1195,28 +1191,12 @@
         <Class IRI="#Tetrapodomorpha"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#DorsalFinSpines"/>
-        <Class IRI="#NoFinSpines"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Elasmobranchii"/>
         <Class IRI="#Holocephali"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#ElongatedSnout"/>
-        <Class IRI="#ShortSnout"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#ExistAnalFin"/>
         <Class IRI="#NoAnalFin"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FiveGillSlits"/>
-        <Class IRI="#SixOrSevenGillSlits"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FlatBodyRayLike"/>
-        <Class IRI="#NotRayLikeBody"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Holostei"/>
@@ -1229,12 +1209,32 @@
         <Class IRI="#Torpediniformes"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#NictitatingEyelids"/>
-        <Class IRI="#NoNictitatingEyelids"/>
+        <Class IRI="#_FiveGillSlits"/>
+        <Class IRI="#_SixOrSevenGillSlits"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OneDorsalFin"/>
-        <Class IRI="#TwoDorsalFins"/>
+        <Class IRI="#_FlatBodyRayLike"/>
+        <Class IRI="#_NotRayLikeBody"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#_OneDorsalFin"/>
+        <Class IRI="#_TwoDorsalFins"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#__DorsalFinSpines"/>
+        <Class IRI="#__NoFinSpines"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#__ElongatedSnout"/>
+        <Class IRI="#__ShortSnout"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#___BehindFrontOfEyesMouth"/>
+        <Class IRI="#___InFrontOfEyesMouth"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#____NictitatingEyelids"/>
+        <Class IRI="#____NoNictitatingEyelids"/>
     </DisjointClasses>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_characteristic"/>
