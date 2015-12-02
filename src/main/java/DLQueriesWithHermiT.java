@@ -98,6 +98,7 @@ public class DLQueriesWithHermiT {
             // meminta jawaban
             System.out.print("Answer: ");
             pil = reader.nextInt();
+            pil -= 1;
         }
 
         // menyusun query dari jawaban

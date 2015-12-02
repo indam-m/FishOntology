@@ -345,6 +345,13 @@
         <Class IRI="#Sarcopterygii"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Actinistia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#FossilLobeFin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Actinopterygii"/>
         <Class IRI="#Osteichthyes"/>
     </SubClassOf>
@@ -448,6 +455,13 @@
         <Class IRI="#Dipnomorpha"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Ceratodontiformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#SurviveWithoutWater"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Chondrichthyes"/>
         <Class IRI="#Name"/>
     </SubClassOf>
@@ -498,6 +512,13 @@
     <SubClassOf>
         <Class IRI="#Dipnomorpha"/>
         <Class IRI="#Rhipidistia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dipnomorpha"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#HabitatInFreshWater"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DorsalFin"/>
@@ -704,6 +725,13 @@
     <SubClassOf>
         <Class IRI="#Lepidosireniformes"/>
         <Class IRI="#Dipnomorpha"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lepidosireniformes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#NotSurviveWithoutWater"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lepisosteiformes"/>
@@ -938,6 +966,13 @@
         <Class IRI="#Sarcopterygii"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Rhipidistia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#NotFossilLobeFin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sarcopterygii"/>
         <Class IRI="#Osteichthyes"/>
     </SubClassOf>
@@ -1032,6 +1067,13 @@
     <SubClassOf>
         <Class IRI="#Tetrapodomorpha"/>
         <Class IRI="#Rhipidistia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetrapodomorpha"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_characteristic"/>
+            <Class IRI="#HabitatNotInFreshWater"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Torpediniformes"/>
