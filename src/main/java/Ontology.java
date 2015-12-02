@@ -1,8 +1,6 @@
+import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.SimpleIRIMapper;
 
 import java.io.File;
@@ -11,6 +9,7 @@ import java.io.File;
  * Created by Anggi on 30/11/2015.
  */
 public class Ontology {
+    String PATH = "C:\\Users\\Anggi\\Documents\\kuliah\\Semester 7\\RPP\\Protege\\fishclassification\\tmp\\fish.owl";
 
     public void load() throws OWLOntologyCreationException {
         // Get hold of an ontology manager
@@ -25,30 +24,42 @@ public class Ontology {
 //        manager.removeOntology(pizzaOntology);
 
         // We can also load ontologies from files. Create a file object that points to the local copy
-        File file = new File("C:\\Users\\Anggi\\Documents\\kuliah\\Semester 7\\RPP\\Protege\\fishclassification\\tmp\\pizza.owl");
+        File file = new File(PATH);
 
         // Load the local copy
-        OWLOntology localPizza = manager.loadOntologyFromOntologyDocument(file);
-        System.out.println("Loaded ontology: " + localPizza);
+        OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
+        System.out.println("Loaded ontology: " + ontology);
 
         // We can always obtain the location where an ontology was loaded from
-        IRI documentIRI = manager.getOntologyDocumentIRI(localPizza);
+        IRI documentIRI = manager.getOntologyDocumentIRI(ontology);
         System.out.println(" from: " + documentIRI);
 
-        // Remove the ontology again so we can reload it later
-//        manager.removeOntology(pizzaOntology);
+        Reasoner hermit=new Reasoner(ontology);
+        System.out.println(hermit.isConsistent());
 
-        // When a local copy of one of more ontologies is used, an ontology IRI mapper can be used
-        // to provide a redirection mechanism. This means that ontologies can be loaded as if they
-        // were located on the Web. In this example, we simply redirect the loading from
-        // http://www.co-ode.org/ontologies/pizza/pizza.owl to our local copy above.
-//        manager.addIRIMapper(new SimpleIRIMapper(iri, IRI.create(file)));
-
-        // Load the ontology as if we were loading it from the Web (from its ontology IRI)
-//        IRI pizzaOntologyIRI = IRI.create("http://protege.stanford.edu/ontologies/pizza/pizza.owl");
-//        OWLOntology redirectedPizza = manager.loadOntology(pizzaOntologyIRI);
-//        System.out.println("Loaded ontology: " + redirectedPizza);
-//        System.out.println(" from: " + manager.getOntologyDocumentIRI(redirectedPizza));
+//        for(OWLNamedIndividual ind: ontology.getIndividualsInSignature()){
+        System.out.println("=OWL CLASS=");
+        for(OWLClass d: ontology.getClassesInSignature()){
+            System.out.println(d.toString());
+            for(OWLClassExpression ce1: d.getSuperClasses(ontology)){
+                if(!ce1.isClassExpressionLiteral()) {
+                    System.out.println(ce1.toString());
+                    System.out.println(ce1.getNestedClassExpressions());
+                    System.out.println(ce1.getSignature());
+                    System.out.println(ce1.getAnonymousIndividuals());
+                    System.out.println("here: " + ce1.getObjectPropertiesInSignature());
+                    System.out.println(ce1.getDataPropertiesInSignature());
+                    System.out.println(ce1.getIndividualsInSignature());
+                    System.out.println(ce1.getClassesInSignature());
+                    System.out.println(ce1.getDatatypesInSignature());
+//                    for (OWLClassExpression ce2 : ce1.getNestedClassExpressions()) {
+//                            System.out.println(ce2.toString());
+//
+//                    }
+                }
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args){
