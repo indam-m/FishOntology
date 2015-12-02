@@ -77,7 +77,7 @@ public class DLQueriesWithHermiT {
 
         // menyusun pertanyaan
         String result = "";
-        result += "How is the characteristic of "+parseOWL(getSuperClass(pilihan[0].asOWLClass(),ontology).toString())+"?"+"\n";
+        result += "How is the "+parseOWL(getSuperClass(pilihan[0].asOWLClass(),ontology).toString())+" of the fish?"+"\n";
         for (i = 0; i < 2; i++) {
             result += i+"."+parseOWL(pilihan[i].toString()).replace("_","")+"\n";
         }
