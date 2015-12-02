@@ -334,73 +334,7 @@
         <Class IRI="#WithoutWater"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_____anal_fin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has____gill_slits"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has___fin_spines"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has__mouth"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_body"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_bone_type"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#has_characteristic"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_dorsal_fin_series"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_electric_organ"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_elongated_body"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_eyelids"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_fin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_gill_pair"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_gill_slits_pos"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_habitat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_jaw_like_shark"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_lobe_fin_type"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_pectoral_fin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_shape_flattened"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_skeleton"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_snout"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_without_water"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Acipenseriformes"/>
@@ -409,13 +343,6 @@
     <SubClassOf>
         <Class IRI="#Actinistia"/>
         <Class IRI="#Sarcopterygii"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Actinistia"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_lobe_fin_type"/>
-            <Class IRI="#FossilLobeFin"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Actinopterygii"/>
@@ -525,13 +452,6 @@
         <Class IRI="#Dipnomorpha"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ceratodontiformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_without_water"/>
-            <Class IRI="#SurviveWithoutWater"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Chondrichthyes"/>
         <Class IRI="#Name"/>
     </SubClassOf>
@@ -582,13 +502,6 @@
     <SubClassOf>
         <Class IRI="#Dipnomorpha"/>
         <Class IRI="#Rhipidistia"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dipnomorpha"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_habitat"/>
-            <Class IRI="#HabitatInFreshWater"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DorsalFin"/>
@@ -827,13 +740,6 @@
     <SubClassOf>
         <Class IRI="#Lepidosireniformes"/>
         <Class IRI="#Dipnomorpha"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lepidosireniformes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_without_water"/>
-            <Class IRI="#NotSurviveWithoutWater"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lepisosteiformes"/>
@@ -1096,13 +1002,6 @@
         <Class IRI="#Sarcopterygii"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Rhipidistia"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_lobe_fin_type"/>
-            <Class IRI="#NotFossilLobeFin"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Sarcopterygii"/>
         <Class IRI="#Osteichthyes"/>
     </SubClassOf>
@@ -1209,13 +1108,6 @@
     <SubClassOf>
         <Class IRI="#Tetrapodomorpha"/>
         <Class IRI="#Rhipidistia"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tetrapodomorpha"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#has_habitat"/>
-            <Class IRI="#HabitatNotInFreshWater"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Torpediniformes"/>
@@ -1345,272 +1237,12 @@
         <Class IRI="#TwoDorsalFins"/>
     </DisjointClasses>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_____anal_fin"/>
-        <Class IRI="#Selachii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#Carcharhiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#Heterodontiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#Hexanchiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#Lamniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#Orectolobiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#Carcharhiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#Heterodontiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#Hexanchiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#Lamniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#Orectolobiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has___fin_spines"/>
-        <Class IRI="#Carcharhiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has___fin_spines"/>
-        <Class IRI="#Heterodontiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has___fin_spines"/>
-        <Class IRI="#Lamniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has___fin_spines"/>
-        <Class IRI="#Orectolobiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has__mouth"/>
-        <Class IRI="#Carcharhiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has__mouth"/>
-        <Class IRI="#Lamniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has__mouth"/>
-        <Class IRI="#Orectolobiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_body"/>
-        <Class IRI="#Pristiophoriformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_body"/>
-        <Class IRI="#Squaliformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_body"/>
-        <Class IRI="#Squatiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_bone_type"/>
-        <Class IRI="#Neopterygii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_characteristic"/>
         <Class IRI="#Name"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_dorsal_fin_series"/>
-        <Class IRI="#Actinopterygii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_electric_organ"/>
-        <Class IRI="#Batoidea"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_elongated_body"/>
-        <Class IRI="#Holostei"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_eyelids"/>
-        <Class IRI="#Carcharhiniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_eyelids"/>
-        <Class IRI="#Lamniformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_fin"/>
-        <Class IRI="#Osteichthyes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_gill_pair"/>
-        <Class IRI="#Chondrichthyes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_gill_slits_pos"/>
-        <Class IRI="#Elasmobranchii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_habitat"/>
-        <Class IRI="#Rhipidistia"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_jaw_like_shark"/>
-        <Class IRI="#Chondrostei"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_jaw_like_shark"/>
-        <Class IRI="#Neopterygii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_lobe_fin_type"/>
-        <Class IRI="#Sarcopterygii"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_pectoral_fin"/>
-        <Class IRI="#Myliobatiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_pectoral_fin"/>
-        <Class IRI="#Pristiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_pectoral_fin"/>
-        <Class IRI="#Rajiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_shape_flattened"/>
-        <Class IRI="#Myliobatiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_shape_flattened"/>
-        <Class IRI="#Rajiformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_skeleton"/>
-        <Class IRI="#Name"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_snout"/>
-        <Class IRI="#Pristiophoriformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_snout"/>
-        <Class IRI="#Squaliformes"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_without_water"/>
-        <Class IRI="#Dipnomorpha"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_____anal_fin"/>
-        <Class IRI="#AnalFin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has____dorsal_fin"/>
-        <Class IRI="#DorsalFin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has____gill_slits"/>
-        <Class IRI="#GillSlits"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has___fin_spines"/>
-        <Class IRI="#FinSpines"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has__mouth"/>
-        <Class IRI="#Mouth"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_body"/>
-        <Class IRI="#Body"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_bone_type"/>
-        <Class IRI="#BoneType"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_characteristic"/>
         <Class IRI="#Properties"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_dorsal_fin_series"/>
-        <Class IRI="#SeriesOfDorsalFin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_electric_organ"/>
-        <Class IRI="#ElectricOrgan"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_elongated_body"/>
-        <Class IRI="#ElongatedBody"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_eyelids"/>
-        <Class IRI="#Eyelids"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_fin"/>
-        <Class IRI="#Fin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_gill_pair"/>
-        <Class IRI="#GillPair"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_gill_slits_pos"/>
-        <Class IRI="#GillSlitsPos"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_habitat"/>
-        <Class IRI="#Habitat"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_jaw_like_shark"/>
-        <Class IRI="#JawLikeShark"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_lobe_fin_type"/>
-        <Class IRI="#LobeFinType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_pectoral_fin"/>
-        <Class IRI="#PectoralFin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_shape_flattened"/>
-        <Class IRI="#FlattenedShape"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_skeleton"/>
-        <Class IRI="#Skeleton"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_snout"/>
-        <Class IRI="#Snout"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_without_water"/>
-        <Class IRI="#WithoutWater"/>
     </ObjectPropertyRange>
 </Ontology>
 

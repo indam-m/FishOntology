@@ -41,17 +41,22 @@ public class Ontology {
         System.out.println("=OWL CLASS=");
         for(OWLClass d: ontology.getClassesInSignature()){
             System.out.println(d.toString());
+//            for(OWLClassExpression ce2: d.getSuperClasses(ontology)){
+//                if(ce2.isClassExpressionLiteral()) { // get superclass
+//                    System.out.println(ce2.toString());
+//                }
+//            }
             for(OWLClassExpression ce1: d.getSuperClasses(ontology)){
-                if(!ce1.isClassExpressionLiteral()) {
+                if(!ce1.isClassExpressionLiteral()) { // get only objectAllValuesFrom or something like "has_blabla only blabla"
                     System.out.println(ce1.toString());
-                    System.out.println(ce1.getNestedClassExpressions());
-                    System.out.println(ce1.getSignature());
-                    System.out.println(ce1.getAnonymousIndividuals());
-                    System.out.println("here: " + ce1.getObjectPropertiesInSignature());
-                    System.out.println(ce1.getDataPropertiesInSignature());
-                    System.out.println(ce1.getIndividualsInSignature());
-                    System.out.println(ce1.getClassesInSignature());
-                    System.out.println(ce1.getDatatypesInSignature());
+//                    System.out.println(ce1.getNestedClassExpressions()); // get array of [value,ObjectAllValuesFrom(object,value)]
+//                    System.out.println(ce1.getSignature()); // get array of [object,value]
+//                    System.out.println(ce1.getAnonymousIndividuals());
+//                    System.out.println("here: " + ce1.getObjectPropertiesInSignature()); // get array of OWLObjectProperty [object]
+//                    System.out.println(ce1.getDataPropertiesInSignature());
+//                    System.out.println(ce1.getIndividualsInSignature());
+                    System.out.println(ce1.getClassesInSignature()); // get array of OWLClass [value],
+//                    System.out.println(ce1.getDatatypesInSignature());
 //                    for (OWLClassExpression ce2 : ce1.getNestedClassExpressions()) {
 //                            System.out.println(ce2.toString());
 //
